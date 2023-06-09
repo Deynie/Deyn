@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week Planner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #60e767; 
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .week-planner {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      grid-template-rows: repeat(15, auto);
+      gap: 15px;
+    }
+    .week-planner .day {
+      background-color: Green; 
+      color: Black;
+      padding: 30px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 1);
+      border-radius: 20px;
+      grid-column: span 1;
+    }
+    .week-planner .day .day-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .week-planner .day .task {
+      margin-bottom: 10px;
+    }
+    .week-planner .day .task .task-info {
+      margin-bottom: 5px;
+    }
+    .week-planner .day .task .task-info label {
+      font-weight: bold;
+    }
+    .week-planner .day .task .task-info span {
+      margin-left: 5px;
+    }
+    .week-planner .day .task .task-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; 
+      border: 0px solid #888888;
+      border-radius: 4px;
+    }
+    .week-planner .day .task .task-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Week Planner</h1>
+    </div>
+
+    <div class="week-planner">
+      <div class="day">
+        <div class="day-header">Monday</div>
+        <div class="task">
+          <div class="task-info">
+            <label>Date:</label>
+            <span>June 12</span>
+          </div>
+          <div class="task-info">
+            <label>What to do:</label>
+            <span>Kaibiang Tunnel Ride</span>
+          </div>
+          <div class="task-info">
+            <label>Who I'm with:</label>
+            <span>My girlfriend Arlona</span>
+          </div>
+          <div class="task-info">
+            <label>Ride in:</label>
+            <span>7:00 AM</span>
+          </div>
+          <div class="task-info">
+            <label>Ride Out:</label>
+            <span>3:00 PM</span>
+          </div>
+          <div class="task-image">
+            <img src="ride1.jpg" alt="Task Image" style="max-width: 100%; max-height: 100%;">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="week-planner">
+      <div class="day">
+        <div class="day-header">Tuesday</div>
+        <div class="task">
+          <div class="task-info">
+            <label>Date:</label>
+            <span>June 13</span>
+          </div>
+          <div class="task-info">
+            <label>What to do:</label>
+            <span>Solo ride</span>
+          </div>
+          <div class="task-info">
+            <label>Route:</label>
+            <span>Binan Loop</span>
+          </div>
+          <div class="task-info">
+            <label>Ride Start:</label>
+            <span>5:00 AM</span>
+          </div>
+          <div class="task-info">
+            <label>Ride Out:</label>
+            <span>4:00 PM</span>
+          </div>
+          <div class="task-image2">
+            <img src="soloride2.jpg" alt="Task Image2" style="max-width: 100%; max-height: 100%;">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="week-planner">
+      <div class="day">
+        <div class="day-header">Wednesday</div>
+        <div class="task">
+          <div class="task-info">
+            <label>Date:</label>
+            <span>June 14</span>
+          </div>
+          <div class="task-info">
+            <label>What to do:</label>
+            <span>SM gala with Lil'sis</span>
+          </div>
+          <div class="task-info">
+            <label>Who I'm with:</label>
+            <span>Lil'sis Angela</span>
+          </div>
+          <div class="task-info">
+            <label>Time In:</label>
+            <span>10:30 AM</span>
+          </div>
+          <div class="task-info">
+            <label>Time Out:</label>
+            <span>5:00 pm</span>
+          </div>
+          <div class="task-image3">
+            <img src="smgala.jpg" alt="Task Image3" style="max-width: 100%; max-height: 100%;">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="week-planner">
+      <div class="day">
+        <div class="day-header">Thursday</div>
+        <div class="task">
+          <div class="task-info">
+            <label>Date:</label>
+            <span>June 15</span>
+          </div>
+          <div class="task-info">
+            <label>What to do:</label>
+            <span>After class gaming</span>
+          </div>
+          <div class="task-info">
+            <label>Who I'm with:</label>
+            <span>Friends</span>
+          </div>
+          <div class="task-info">
+            <label>Time In:</label>
+            <span>7:00 PM</span>
+          </div>
+          <div class="task-info">
+            <label>Time Out:</label>
+            <span>9:00 PM</span>
+          </div>
+          <div class="task-image4">
+            <img src="game1.jpg" alt="Task Image4" style="max-width: 100%; max-height: 100%;">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="week-planner">
+        <div class="day">
+          <div class="day-header">Friday</div>
+          <div class="task">
+            <div class="task-info">
+              <label>Date:</label>
+              <span>June 16</span>
+            </div>
+            <div class="task-info">
+              <label>What to do:</label>
+              <span>School Seminar</span>
+            </div>
+            <div class="task-info">
+              <label>Who I'm with:</label>
+              <span>Friends & Classmates</span>
+            </div>
+            <div class="task-info">
+              <label>Time In:</label>
+              <span>9:00 AM</span>
+            </div>
+            <div class="task-info">
+              <label>Time Out:</label>
+              <span>1:00 PM</span>
+            </div>
+            <div class="task-imag7">
+              <img src="seminar1.jpg" alt="Task Image7" style="max-width: 100%; max-height: 100%;">
+            </div>
+          </div>
+        </div>
+
+
+      <div class="week-planner">
+      <div class="day">
+        <div class="day-header">Saturday</div>
+        <div class="task">
+          <div class="task-info">
+            <label>Date:</label>
+            <span>June 17</span>
+          </div>
+          <div class="task-info">
+            <label>What to do:</label>
+            <span>Seminar NSTP</span>
+          </div>
+          <div class="task-info">
+            <label>Who I'm with:</label>
+            <span>Friends & Classmates</span>
+          </div>
+          <div class="task-info">
+            <label>Time In:</label>
+            <span>9:00 AM</span>
+          </div>
+          <div class="task-info">
+            <label>Time Out:</label>
+            <span>1:00 PM</span>
+          </div>
+          <div class="task-image6">
+            <img src="seminar2.jpg" alt="Task Image6" style="max-width: 100%; max-height: 100%;">
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="week-planner">
+        <div class="day">
+          <div class="day-header">Sunday</div>
+          <div class="task">
+            <div class="task-info">
+              <label>Date:</label>
+              <span>June 18</span>
+            </div>
+            <div class="task-info">
+              <label>What to do:</label>
+              <span>Motor Wash then go to a friend</span>
+            </div>
+            <div class="task-info">
+              <label>Who I'm with:</label>
+              <span>Myself</span>
+            </div>
+            <div class="task-info">
+              <label>Time of departure:</label>
+              <span>10:00 AM</span>
+            </div>
+            <div class="task-info">
+              <label>Time Out:</label>
+              <span>3:00 PM</span>
+            </div>
+            <div class="task-image5">
+              <img src="motorwash.jpg" alt="Task Imag5" style="max-width: 100%; max-height: 150%;">
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>
